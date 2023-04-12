@@ -1,0 +1,84 @@
+.footer {
+  background-color: $main-text;
+  padding: 64px 0;
+  color: $white;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__part {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__logo {
+    margin: 0 0 32px;
+  }
+
+  &__contact-link {
+    @include h5;
+    color: $white;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @include mobile {
+      padding-top: 32px;
+    }
+  }
+
+  &__nav-item {
+    @include h6;
+    text-align: right;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    @include mobile {
+      text-align: left;
+    }
+  }
+
+  &__bottom {
+    padding-top: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__bottom-text {
+    @include b1;
+    color: $text-grey;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+}

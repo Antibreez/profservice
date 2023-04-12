@@ -1,0 +1,132 @@
+.field-input-radio {
+  margin-bottom: 15px;
+  width: auto;
+  display: block;
+  position: relative;
+  text-align: left;
+  font-weight: normal;
+  cursor: pointer;
+  color: currentColor;
+  line-height: 1.1;
+}
+.field-input-radio [class^='ico-'] {
+  margin-right: 6px;
+}
+.field-input-radio i {
+  font-size: 12px;
+  color: #99a4ab;
+}
+.field-input-radio input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.field-input-radio input[type='radio'] + span {
+  padding: 0 0 0 38px;
+  display: inline-block;
+  line-height: 1.5;
+}
+.field-input-radio input[type='radio'] + span:before {
+  content: '';
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  background: #f4f4f8;
+  border-radius: 100%;
+  border: 1px solid #f4f4f8;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.field-input-radio input[type='radio']:checked + span:before {
+  content: '';
+  background: #2858ff;
+  -webkit-box-shadow: inset 0 0 0 2px #2858ff, inset 0 0 0 5px #fff;
+  box-shadow: inset 0 0 0 2px #2858ff, inset 0 0 0 5px #fff;
+}
+.field-input-radio_red input[type='radio'] + span {
+  padding: 0 0 0 25px;
+  display: inline-block;
+  line-height: 1.1;
+}
+.field-input-radio_red input[type='radio'] + span:before {
+  background: #f3f3f3;
+  border: 1px solid #f3f3f3;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: background-color 300ms ease, border-color 300ms ease;
+  -o-transition: background-color 300ms ease, border-color 300ms ease;
+  transition: background-color 300ms ease, border-color 300ms ease;
+}
+.field-input-radio_red input[type='radio']:checked + span:before {
+  content: '';
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #2858ff;
+  background-image: url('data:image/svg+xml,%3C?xml%20version%3D%221.0%22%20?%3E%3Csvg%20version%3D%221.1%22%20%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2278.369px%22%20height%3D%2278.369px%22%20viewBox%3D%220%200%2078.369%2078.369%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M78.049,19.015L29.458,67.606c-0.428,0.428-1.121,0.428-1.548,0L0.32,40.015c-0.427-0.426-0.427-1.119,0-1.547l6.704-6.704c0.428-0.427,1.121-0.427,1.548,0l20.113,20.112l41.113-41.113c0.429-0.427,1.12-0.427,1.548,0l6.703,6.704C78.477,17.894,78.477,18.586,78.049,19.015z%22/%3E%3C/svg%3E');
+  background-size: 12px 9px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: #fc4242;
+}
+.field-input-radio input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.field-input-radio input[type='checkbox'] + i + span,
+.field-input-radio input[type='checkbox'] + span {
+  padding: 0 0 0 38px;
+  min-height: 22px;
+  display: inline-block;
+  line-height: 1.5;
+}
+.field-input-radio input[type='checkbox'] + i + span:before,
+.field-input-radio input[type='checkbox'] + span:before {
+  content: '';
+  margin: 0 0 0 0;
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  border: 1px solid #f4f4f8;
+  border-radius: 4px;
+  background: #f4f4f8;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.field-input-radio input[type='checkbox']:checked + i + span:before,
+.field-input-radio input[type='checkbox']:checked + span:before {
+  border-color: #2858ff;
+  background-color: #2858ff;
+  background-image: url('data:image/svg+xml,%3C?xml%20version%3D%221.0%22%20?%3E%3Csvg%20version%3D%221.1%22%20%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2278.369px%22%20height%3D%2278.369px%22%20viewBox%3D%220%200%2078.369%2078.369%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M78.049,19.015L29.458,67.606c-0.428,0.428-1.121,0.428-1.548,0L0.32,40.015c-0.427-0.426-0.427-1.119,0-1.547l6.704-6.704c0.428-0.427,1.121-0.427,1.548,0l20.113,20.112l41.113-41.113c0.429-0.427,1.12-0.427,1.548,0l6.703,6.704C78.477,17.894,78.477,18.586,78.049,19.015z%22/%3E%3C/svg%3E');
+  background-size: 12px 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.field-input-radio input[type='checkbox'][disabled] + i + span,
+.field-input-radio input[type='checkbox'][disabled] + span {
+  color: #d1d8e1;
+  cursor: default;
+}
+.field-input-radio input[type='checkbox'][disabled] + i + span:before,
+.field-input-radio input[type='checkbox'][disabled] + span:before {
+  border-color: #f4f4f8;
+  background: #f4f4f8;
+}
+.field-input-radio input[type='checkbox'][disabled]:checked + i + span:before,
+.field-input-radio input[type='checkbox'][disabled]:checked + span:before {
+  border-color: #f4f4f8;
+  background-color: #f4f4f8;
+  background-image: url('data:image/svg+xml,%3C?xml%20version%3D%221.0%22%20?%3E%3Csvg%20version%3D%221.1%22%20%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2278.369px%22%20height%3D%2278.369px%22%20viewBox%3D%220%200%2078.369%2078.369%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M78.049,19.015L29.458,67.606c-0.428,0.428-1.121,0.428-1.548,0L0.32,40.015c-0.427-0.426-0.427-1.119,0-1.547l6.704-6.704c0.428-0.427,1.121-0.427,1.548,0l20.113,20.112l41.113-41.113c0.429-0.427,1.12-0.427,1.548,0l6.703,6.704C78.477,17.894,78.477,18.586,78.049,19.015z%22/%3E%3C/svg%3E');
+  background-size: 12px 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,129 @@
+.payment {
+  &__note {
+    margin: 0 0 109px;
+
+    @include tablet {
+      margin-bottom: 70px;
+    }
+
+    @include mobile {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__note-text {
+    @include b1;
+    color: $text-grey;
+
+    @include mobile {
+      font-size: 13px;
+    }
+  }
+
+  &__payment-safety-label {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 16px;
+    }
+
+    span {
+      font-size: 24px;
+      line-height: 120%;
+      font-weight: 600;
+
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__payment {
+    margin: 0 0 120px;
+
+    @include tablet {
+      margin: 0 0 80px;
+    }
+
+    @include mobile {
+      margin: 0 0 60px;
+    }
+  }
+
+  &__payment-form {
+    padding: 32px;
+    border: 1.5px solid #ECEBF3;
+    border-radius: 16px;
+    margin: 0 0 32px;
+  }
+
+  &__payment-bank-icon {
+    margin: 0 0 24px;
+    font-size: 0;
+    line-height: 0;
+
+    @include mobile {
+      img {
+        width: 120px;
+        height: auto;
+      }
+    }
+  }
+
+  &__payment-bank-desc {
+    @include b1;
+    margin: 0 0 24px;
+    color: $text-grey;
+
+    @include mobile {
+      font-size: 13px;
+    }
+  }
+
+  &__payment-order-input {
+    margin: 0 0 24px;
+  }
+
+  &__payment-order-submit {
+    width: 100%;
+  }
+
+  &__payment-desc {
+    @include b1;
+    color: $text-grey;
+    margin: 0;
+  }
+
+  &__safety,
+  &__failure {
+    margin: 0 0 120px;
+
+    @include tablet {
+      margin: 0 0 80px;
+    }
+
+    @include mobile {
+      margin: 0 0 60px;
+    }
+  }
+
+  &__service-request {
+    padding: 120px 0;
+    background-color: $primary;
+
+    @include tablet {
+      padding: 80px 0;
+    }
+
+    @include mobile {
+      padding: 60px 0;
+    }
+  }
+
+  &__service-request-form {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+}

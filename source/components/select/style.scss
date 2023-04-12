@@ -1,0 +1,112 @@
+.select-block {
+  width: 100%;
+
+  &.invalid {
+    .select2-container--default .select2-selection--single .select2-selection__placeholder {
+      color: $fail;
+    }
+
+    .select-block__error-message {
+      display: block;
+    }
+  }
+}
+
+.select-block__error-message {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 180%;
+  font-weight: 400;
+  color: #fd3c2f;
+  padding: 0 16px;
+  display: none;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 16px;
+  padding-right: 40px;
+  height: 64px;
+  line-height: 64px;
+}
+
+.select2-container .select2-selection--single {
+  height: 64px;
+  border: none;
+  border-radius: 5px;
+  background-color: $grey200;
+  transition: background-color 0.2s;
+
+  &:not(:disabled):hover {
+    background-color: $grey250;
+  }
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: $main-text;
+}
+
+.select2-selection__placeholder {
+  span {
+    color: $fail;
+  }
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 100%;
+  width: 40px;
+
+  b {
+    margin-left: 0;
+    margin-top: -12px;
+    left: 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 10.5L12 14.5L16 10.5" stroke="rgba(108, 118, 132, 1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  }
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  transform: rotate(180deg);
+}
+
+.select2-dropdown {
+  border: none;
+  box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.select2-container--open .select2-dropdown--below {
+  border-radius: 2px;
+  top: 6px;
+}
+
+.select2-container--open .select2-dropdown--above {
+  border-radius: 2px;
+  top: -6px;
+}
+
+.select2-results__options {
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+  max-height: 160px;
+}
+
+.select2-results__option {
+  @include b1;
+  line-height: 24px;
+  padding: 4px 16px;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: transparent;
+  color: $primary;
+}
+
+.select2-container--default .select2-results__option--selected {
+  background-color: transparent;
+}

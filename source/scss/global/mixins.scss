@@ -1,0 +1,114 @@
+// ШРИФТЫ
+@mixin font-face($name, $filename, $weight, $joinName: $name, $style: normal) {
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: $name;
+    font-style: $style;
+    font-weight: $weight;
+    src: url('../fonts/' + $filename + '.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/' + $filename + '.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+}
+
+// Разрешения
+@mixin mobile {
+  @media (max-width: ($tablet - 1px)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: ($desktop-m - 1px)) {
+    @content;
+  }
+}
+
+@mixin desktop-m {
+  @media (max-width: ($desktop - 1px)) {
+    @content;
+  }
+}
+
+@mixin desktop-only {
+  @media (min-width: $desktop-m) {
+    @content;
+  }
+}
+
+// Шрифты
+@mixin h1 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+@mixin h2 {
+  margin: 0;
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 500;
+}
+
+@mixin h3 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+// @mixin h4 {
+//   margin: 0;
+//   font-size: 32px;
+//   line-height: 120%;
+//   font-weight: 500;
+// }
+
+@mixin h5 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+@mixin h6 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+@mixin h7 {
+  margin: 0;
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+// @mixin h8 {
+//   margin: 0;
+//   font-size: 12px;
+//   line-height: 120%;
+//   font-weight: 500;
+// }
+
+@mixin b1 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 180%;
+  font-weight: 400;
+}
+
+@mixin b2 {
+  margin: 0;
+  font-size: 12px;
+  line-height: 180%;
+  font-weight: 400;
+}
+
+// @mixin b3 {
+//   margin: 0;
+//   font-size: 10px;
+//   line-height: 150%;
+//   font-weight: 400;
+// }

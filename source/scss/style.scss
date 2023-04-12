@@ -1,0 +1,22 @@
+//Библиотеки
+@import '../../node_modules/normalize.css/normalize';
+// @import '../../node_modules/swiper/swiper-bundle';
+@import '../../node_modules/jquery-ui-bundle/jquery-ui';
+@import '../../node_modules/select2/dist/css/select2';
+// @import '../../node_modules/perfect-scrollbar/css/perfect-scrollbar';
+
+//Global
+@import 'global/variables.scss';
+@import 'global/mixins.scss';
+@import 'global/functions.scss';
+@import 'global/fonts.scss';
+@import 'global/global.scss';
+
+// Components
+//@import 'components/*.scss';
+@import '../components/**/*.scss';
+
+@import './components/**/*.scss';
+
+// Blocks
+@import 'blocks/*.scss';

@@ -1,0 +1,26 @@
+.breadcrumbs {
+  margin: 0 0 12px;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    @include b2;
+    color: $text-grey;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+
+      a {
+        &::after {
+          content: "→";
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}

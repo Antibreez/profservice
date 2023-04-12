@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+
+  color: $main-text;
+  transition: color 0.2s;
+
+  @include desktop-only {
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  // display: flex;
+}
+
+.reset-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: $font;
+  color: $main-text;
+  min-width: $mobile;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &.js-no-scroll {
+    overflow: hidden;
+  }
+}
+
+main {
+  flex-grow: 1;
+  //padding-top: 124px;
+
+  // @include tablet {
+  //   padding-top: 104px;
+  // }
+
+  // @include mobile {
+  //   padding-top: 64px;
+  // }
+}
+
+// section {
+//   margin-bottom: 100px;
+
+//   @include tablet {
+//     margin-bottom: 80px;
+//   }
+
+//   @include mobile {
+//     margin-bottom: 40px;
+//   }
+// }
+
+// .section-title {
+//   font-weight: 600;
+//   font-size: 32px;
+//   line-height: 38px;
+//   color: $main-text;
+//   margin: 0 0 40px;
+
+//   @include mobile {
+//     font-size: 24px;
+//     line-height: 29px;
+//     margin: 0 0 24px;
+//   }
+// }
+
+.container {
+  max-width: $desktop;
+  min-width: $mobile;
+  margin: 0 auto;
+  padding-left: $desktop-gap;
+  padding-right: $desktop-gap;
+
+  @include tablet {
+    padding-left: $tablet-gap;
+    padding-right: $tablet-gap;
+  }
+
+  @include mobile {
+    padding-left: $mobile-gap;
+    padding-right: $mobile-gap;
+  }
+}
+
+// .container-large {
+//   max-width: $desktop-outer;
+// }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.only-tablet {
+  @media (min-width: $desktop-m) {
+    display: none;
+  }
+}
+
+.only-desktop {
+  @include tablet {
+    display: none;
+  }
+}
