@@ -1,0 +1,18 @@
+.back-link {
+  font-size: 12px;
+  line-height: 180%;
+  display: inline-flex;
+  align-items: center;
+
+  &.light {
+    color: $white;
+  }
+
+  span {
+    margin-right: 8px;
+
+    &:first-child {
+      transform: rotate(180deg);
+    }
+  }
+}

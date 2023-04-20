@@ -1,0 +1,37 @@
+.invoice {
+  background-color: $primary;
+  margin-top: -48px;
+  padding: 48px 0 120px;
+
+  @include tablet {
+    margin-top: -64px;
+    padding-top: 64px;
+    padding-bottom: 102px;
+  }
+
+  @include mobile {
+    margin-top: -40px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+
+  &__back-link {
+    margin: 0 0 50px;
+
+    @include mobile {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__form {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__result {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

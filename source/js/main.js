@@ -18,6 +18,7 @@ requireAll(require.context('../components/', true, /\.js$/))
 // import './perfect-scrollbar'
 import './scroll'
 import './service-form'
+import './invoice-form'
 import './header-scroll'
 import './header-menu'
 
