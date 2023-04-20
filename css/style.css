@@ -2673,6 +2673,16 @@ main {
     @media (max-width: 767px) {
       .service-form__title {
         font-size: 24px; } }
+  .service-form__subtitle {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 600;
+    margin: 0 0 16px;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .service-form__subtitle {
+        font-size: 14px;
+        margin-bottom: 8px; } }
   .service-form__desc {
     margin: 0;
     font-size: 14px;
@@ -2690,7 +2700,7 @@ main {
       .service-form__desc {
         font-size: 13px;
         margin: 0 auto 32px; } }
-  .service-form__inner > *:not(.service-form__title):not(.service-form__desc) {
+  .service-form__inner > *:not(.service-form__title):not(.service-form__desc):not(.service-form__subtitle) {
     margin-bottom: 16px; }
   .service-form__submit {
     width: 100%; }
@@ -2705,6 +2715,48 @@ main {
       color: #14CF93; }
       .service-form__policy a:hover {
         text-decoration: underline; }
+  .service-form__icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 40px;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .service-form__icon.success {
+      background-color: #14CF93;
+      background-image: url('data:image/svg+xml;utf8,<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M43.1428 14.2148L19.5714 37.7863L8.85712 27.072" stroke="white" stroke-width="3.21429" stroke-linecap="round" stroke-linejoin="round"/></svg>'); }
+    .service-form__icon.pending {
+      background-color: #6C7684;
+      background-image: url('data:image/svg+xml;utf8,<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.946 25.998L9.12442 30.8196L4.30286 25.998" stroke="white" stroke-width="3.21438" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.12441 25.998C9.12441 27.4852 9.30871 28.9253 9.628 30.316" stroke="white" stroke-width="3.21438" stroke-linecap="round" stroke-linejoin="round"/><path d="M47.6969 25.9982C47.6969 15.3457 39.0631 6.71191 28.4106 6.71191C17.7582 6.71191 9.12439 15.3457 9.12439 25.9982" stroke="white" stroke-width="3.21438" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.4106 45.2843C39.0631 45.2843 47.6969 36.6505 47.6969 25.998" stroke="white" stroke-width="3.21438" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.6152 37.0459C16.1018 42.0239 21.8705 45.2854 28.4107 45.2854" stroke="white" stroke-width="3.21438" stroke-linecap="round" stroke-linejoin="round"/><path d="M35.6344 32.1516L27.8085 27.4951V17.3955" stroke="white" stroke-width="3.21438" stroke-linecap="round" stroke-linejoin="round"/></svg>'); }
+    .service-form__icon.failed {
+      background-color: #FF5934;
+      background-image: url('data:image/svg+xml;utf8,<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.9997 10.9961L41.0007 40.9971" stroke="white" stroke-width="3.2144" stroke-linecap="round" stroke-linejoin="round"/><path d="M41.0007 10.9961L10.9997 40.9971" stroke="white" stroke-width="3.2144" stroke-linecap="round" stroke-linejoin="round"/></svg>'); }
+    @media (max-width: 767px) {
+      .service-form__icon {
+        width: 80px;
+        height: 80px;
+        background-size: 34px 34px;
+        margin-bottom: 32px; } }
+  .service-form__link {
+    width: 100%; }
+
+.back-link {
+  font-size: 12px;
+  line-height: 180%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .back-link.light {
+    color: #ffffff; }
+  .back-link span {
+    margin-right: 8px; }
+    .back-link span:first-child {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
 
 .breadcrumbs {
   margin: 0 0 12px; }
@@ -3503,6 +3555,16 @@ main {
     @media (max-width: 767px) {
       .service-form__title {
         font-size: 24px; } }
+  .service-form__subtitle {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 600;
+    margin: 0 0 16px;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .service-form__subtitle {
+        font-size: 14px;
+        margin-bottom: 8px; } }
   .service-form__desc {
     margin: 0;
     font-size: 14px;
@@ -3520,7 +3582,7 @@ main {
       .service-form__desc {
         font-size: 13px;
         margin: 0 auto 32px; } }
-  .service-form__inner > *:not(.service-form__title):not(.service-form__desc) {
+  .service-form__inner > *:not(.service-form__title):not(.service-form__desc):not(.service-form__subtitle) {
     margin-bottom: 16px; }
   .service-form__submit {
     width: 100%; }
@@ -3535,6 +3597,58 @@ main {
       color: #14CF93; }
       .service-form__policy a:hover {
         text-decoration: underline; }
+  .service-form__icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 40px;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .service-form__icon.success {
+      background-color: #14CF93;
+      background-image: url('data:image/svg+xml;utf8,<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M43.1428 14.2148L19.5714 37.7863L8.85712 27.072" stroke="white" stroke-width="3.21429" stroke-linecap="round" stroke-linejoin="round"/></svg>'); }
+    .service-form__icon.pending {
+      background-color: #6C7684;
+      background-image: url('data:image/svg+xml;utf8,<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.946 25.998L9.12442 30.8196L4.30286 25.998" stroke="white" stroke-width="3.21438" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.12441 25.998C9.12441 27.4852 9.30871 28.9253 9.628 30.316" stroke="white" stroke-width="3.21438" stroke-linecap="round" stroke-linejoin="round"/><path d="M47.6969 25.9982C47.6969 15.3457 39.0631 6.71191 28.4106 6.71191C17.7582 6.71191 9.12439 15.3457 9.12439 25.9982" stroke="white" stroke-width="3.21438" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.4106 45.2843C39.0631 45.2843 47.6969 36.6505 47.6969 25.998" stroke="white" stroke-width="3.21438" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.6152 37.0459C16.1018 42.0239 21.8705 45.2854 28.4107 45.2854" stroke="white" stroke-width="3.21438" stroke-linecap="round" stroke-linejoin="round"/><path d="M35.6344 32.1516L27.8085 27.4951V17.3955" stroke="white" stroke-width="3.21438" stroke-linecap="round" stroke-linejoin="round"/></svg>'); }
+    .service-form__icon.failed {
+      background-color: #FF5934;
+      background-image: url('data:image/svg+xml;utf8,<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.9997 10.9961L41.0007 40.9971" stroke="white" stroke-width="3.2144" stroke-linecap="round" stroke-linejoin="round"/><path d="M41.0007 10.9961L10.9997 40.9971" stroke="white" stroke-width="3.2144" stroke-linecap="round" stroke-linejoin="round"/></svg>'); }
+    @media (max-width: 767px) {
+      .service-form__icon {
+        width: 80px;
+        height: 80px;
+        background-size: 34px 34px;
+        margin-bottom: 32px; } }
+  .service-form__link {
+    width: 100%; }
+
+.invoice {
+  background-color: #14CF93;
+  margin-top: -48px;
+  padding: 48px 0 120px; }
+  @media (max-width: 1023px) {
+    .invoice {
+      margin-top: -64px;
+      padding-top: 64px;
+      padding-bottom: 102px; } }
+  @media (max-width: 767px) {
+    .invoice {
+      margin-top: -40px;
+      padding-top: 40px;
+      padding-bottom: 70px; } }
+  .invoice__back-link {
+    margin: 0 0 50px; }
+    @media (max-width: 767px) {
+      .invoice__back-link {
+        margin-bottom: 24px; } }
+  .invoice__form {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto; }
+  .invoice__result {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto; }
 
 .payment__note {
   margin: 0 0 109px; }

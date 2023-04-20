@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Профсервис</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <a href="#" class="header__logo-link" aria-label="На главную">
+          <img src="img/logo.svg" alt="Профсервис" class="header__logo" />
+        </a>
+
+        <div class="header__menu">
+          <div class="header__menu-overlay only-tablet"></div>
+          <div class="header__menu-inner">
+          <button class="header__menu-close-btn only-tablet">
+            <svg><use xlink:href="img/sprite.svg#close"></use></svg>
+          </button>
+          <img src="img/logo.svg" alt="Профсервис" class="header__logo only-tablet" />
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="#1" class="header__nav-link">Услуги</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Оплата</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">О компании</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <a href="#service-request" class="header__button button">Оставить заявку</a>
+          </div>
+        </div>
+
+        <button
+          class="header__nav-button only-tablet"
+          type="button"
+          aria-label="Показать/скрыть меню"
+        >
+          <svg><use xlink:href="./img/sprite.svg#menu-icon"></use></svg>
+        </button>
+      </div>
+    </header>
+
+
+    <main class="page__main">
+      <div class="invoice">
+        <div class="invoice__container container">
+          <a href="#" class="invoice__back-link back-link light">
+            <span>→</span>
+            <span>Назад</span>
+          </a>
+          <div class="invoice__form service-form">
+            <form>
+              <div class="service-form__inner">
+                <h2 class="service-form__title">
+                  Счёт №SIER-002182
+                </h2>
+                <p class="service-form__subtitle">
+                  На сумму 58 302 ₽
+                </p>
+                <p class="service-form__desc">
+                  Введите свои ФИО, номер телефона и&nbsp;email для&nbsp;продолжения оплаты
+                </p>
+                <div class="input">
+                  <label>ФИО<span>*</span></label>
+                  <input id="invoice-name" type="text" name="name" autocomplete="off">
+                  <p class="input__message">Заполните поле</p>
+                </div>
+                <div class="input">
+                  <label>Номер телефона<span>*</span></label>
+                  <input id="invoice-phone" class="phone" type="text" name="phone" placeholder="+7(___)___-__-__" autocomplete="off">
+                  <p class="input__message">Введите верный номер телефона</p>
+                </div>
+                <div class="input">
+                  <label>Email<span>*</span></label>
+                  <input id="invoice-email" type="text" name="email" placeholder="user@daichi.ru" autocomplete="off">
+                  <p class="input__message">Введите верный Email</p>
+                </div>
+                <button class="service-form__submit button" disabled>Оплатить</button>
+                <p class="service-form__policy">
+                  Нажимая кнопку «Оплатить», я&nbsp;соглашаюсь <a href="#">с&nbsp;политикой конфиденциальности</a>
+                </p>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer">
+      <div class="footer__container container">
+        <div class="footer__part">
+          <a href="#" class="footer__logo"><img src="./img/logo-white.svg" alt="Профсервис"></a>
+          <a href="mailto:info@profservice.ru" class="footer__contact-link">info@profservice.ru</a>
+          <a href="tel:+70000000000" class="footer__contact-link">+7 (000) 000-00-00</a>
+        </div>
+        <div class="footer__part">
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a href="#">Услуги</a></li>
+              <li class="footer__nav-item"><a href="#">Оплата</a></li>
+              <li class="footer__nav-item"><a href="#">О компании</a></li>
+              <li class="footer__nav-item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <span class="footer__bottom-text">2022 ООО Профсервис</span>
+          <a href="#" class="footer__bottom-text footer__bottom-text--link">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

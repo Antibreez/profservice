@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Профсервис</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <a href="#" class="header__logo-link" aria-label="На главную">
+          <img src="img/logo.svg" alt="Профсервис" class="header__logo" />
+        </a>
+
+        <div class="header__menu">
+          <div class="header__menu-overlay only-tablet"></div>
+          <div class="header__menu-inner">
+          <button class="header__menu-close-btn only-tablet">
+            <svg><use xlink:href="img/sprite.svg#close"></use></svg>
+          </button>
+          <img src="img/logo.svg" alt="Профсервис" class="header__logo only-tablet" />
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="#1" class="header__nav-link">Услуги</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Оплата</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">О компании</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <a href="#service-request" class="header__button button">Оставить заявку</a>
+          </div>
+        </div>
+
+        <button
+          class="header__nav-button only-tablet"
+          type="button"
+          aria-label="Показать/скрыть меню"
+        >
+          <svg><use xlink:href="./img/sprite.svg#menu-icon"></use></svg>
+        </button>
+      </div>
+    </header>
+
+
+    <main class="page__main">
+      <div class="breadcrumbs">
+        <div class="breadcurmbs__container container">
+          <ul class="breadcrumbs__list">
+            
+              <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+            
+              <li class="breadcrumbs__item"><a href="#">Оплата банковской картой</a></li>
+            
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="page__title-block">
+        <div class="page__title-container container">
+          <h1 class="page__title">Оплата банковской картой</h1>
+        </div>
+      </div>
+
+      <div class="payment">
+        <div class="payment__note">
+          <div class="payment__note-container container">
+            <p class="payment__note-text">
+              Не оплачивайте до подтверждения менеджером. Сервис предоставлен ПАО «СДМ-Банк».
+            </p>
+          </div>
+        </div>
+        <div class="payment__payment">
+          <div class="payment__payment-container container">
+            <div class="page__content-blocks">
+              <div class="page__content-left">
+                <div class="payment__payment-safety-label">
+                  <img src="./img/shield.svg" alt="Safety">
+                  <span>Платёж безопасен</span>
+                </div>
+              </div>
+              <div class="page__content-right">
+                <div class="payment__payment-form">
+                  <form>
+                    <div class="payment__payment-bank-icon">
+                      <img src="./img/sdm.svg" alt="«СДМ-Банк»">
+                    </div>
+                    <p class="payment__payment-bank-desc">
+                      Укажите номер заказа, после вы будете перенаправлены на платежный шлюз ПАО&nbsp;«СДМ&nbsp;БАНК»
+                    </p>
+                    <div class="payment__payment-order-input input">
+                      <label>Номер заказа</label>
+                      <input type="text" name="order-number" autocomplete="off">
+                      <p class="input__message">Заполните поле</p>
+                    </div>
+                    <a href="#" class="payment__payment-order-submit button">Перейти к оплате</a>
+                  </form>
+                </div>
+                <p class="page__content-text">
+                  Для оплаты покупки&nbsp;Вы будете перенаправлены на&nbsp;платежный шлюз ПАО &laquo;СДМ БАНК&raquo; для ввода реквизитов Вашей карты. Пожалуйста, приготовьте Вашу пластиковую карту заранее. Соединение с&nbsp;платежным шлюзом и&nbsp;передача информации осуществляется в&nbsp;защищенном режиме с&nbsp;использованием протокола шифрования SSL. В&nbsp;случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By&nbsp;Visa или MasterCard Secure Code для проведения платежа также может потребоваться ввод специального пароля.
+                  <br/><br/>
+                  Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой персональной информации обеспечивается ПАО &laquo;СДМ БАНК&raquo;. Введенная информация не&nbsp;будет предоставлена третьим лицам за&nbsp;исключением случаев, предусмотренных законодательством РФ. Проведение платежей по&nbsp;банковским картам осуществляется в&nbsp;строгом соответствии с&nbsp;требованиями платежных систем Visa Int., MasterCard Europe Sprl и&nbsp;Национальной платежной системы МИР.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="payment__safety">
+          <div class="payment__safety-container container">
+            <div class="page__content-blocks">
+              <div class="page__content-left">
+                <h2 class="page__content-blocks-title">
+                  Меры безопасности при проведении оплаты с&nbsp;банковской карты в&nbsp;интернете
+                </h2>
+              </div>
+              <div class="page__content-right">
+                <p class="page__content-text">
+                  Не&nbsp;используйте ПИН при заказе товаров и&nbsp;услуг через сеть Интернет, а&nbsp;также по&nbsp;телефону/факсу.
+                  <br/><br/>
+                  Не&nbsp;сообщайте персональные данные или информацию о&nbsp;банковской(ом) карте (счете) через сеть Интернет, например, ПИН, пароли доступа к&nbsp;ресурсам банка, срок действия банковской карты, кредитные лимиты, историю операций, персональные данные.
+                  <br/><br/>
+                  Следует пользоваться интернет-сайтами только известных и&nbsp;проверенных организаций торговли и&nbsp;услуг.
+                  <br/><br/>
+                  Обязательно убедитесь в&nbsp;правильности адресов интернет-сайтов, к&nbsp;которым подключаетесь и&nbsp;на&nbsp;которых собираетесь совершить покупки, т.к. похожие адреса могут использоваться для осуществления неправомерных действий.
+                  <br/><br/>
+                  Платите по&nbsp;карте только на&nbsp;защищенных страницах сайта, в&nbsp;адресной строке браузера появится &laquo;https://&raquo; и&nbsp;значок в&nbsp;виде закрытого замочка. Значок означает, что ваши данные будут передаваться в&nbsp;зашифрованном виде.
+                  <br/><br/>
+                  Установите на&nbsp;свой компьютер антивирусное программное обеспечение и&nbsp;регулярно производите его обновление и&nbsp;обновление других используемых Вами программных продуктов (операционной системы и&nbsp;прикладных программ), это может защитить Вас от&nbsp;проникновения вредоносного программного обеспечения.
+                  <br/><br/>
+                  Рекомендуется совершать покупки только со&nbsp;своего компьютера в&nbsp;целях сохранения конфиденциальности персональных данных и(или) информации о&nbsp;банковской(ом) карте (счете).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="payment__failure">
+          <div class="payment__failure-container container">
+            <div class="page__content-blocks">
+              <div class="page__content-left">
+                <h2 class="page__content-blocks-title">
+                  Информация о&nbsp;действиях держателя карты в&nbsp;сбойной ситуации
+                </h2>
+              </div>
+              <div class="page__content-right">
+                <p class="page__content-text">
+                  При получении отрицательного результата авторизации банк отправляет уведомление об&nbsp;отказе в&nbsp;операции и&nbsp;передает данную информацию интернет-магазину и&nbsp;держателю карты, с&nbsp;указанием причин отказа. Если произошел сбой при осуществлении операции оплаты, попробуйте выяснить причину у&nbsp;консультантов Вашего банка или обратитесь за&nbsp;помощью к&nbsp;менеджеру нашей компании.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="service-request" class="payment__service-request">
+          <div class="payment__service-request-container container">
+            <div class="payment__service-request-form service-form">
+              <form>
+                <div class="service-form__inner">
+                  <h2 class="service-form__title">
+                    Нужен ремонт или<br/> обслуживание кондиционера?<br/>
+                    <span>Обратитесь к нам!</span>
+                  </h2>
+                  <p class="service-form__desc">
+                    Оставьте свои данные в&nbsp;форме онлайн-заявки и&nbsp;мы&nbsp;вам обязательно перезвоним
+                  </p>
+                  <div class="input">
+                    <label>ФИО<span>*</span></label>
+                    <input id="service-form-name" type="text" name="name" autocomplete="off">
+                    <p class="input__message">Заполните поле</p>
+                  </div>
+                  <div class="input">
+                    <label>Номер телефона<span>*</span></label>
+                    <input id="service-form-phone" class="phone" type="text" name="phone" placeholder="+7(___)___-__-__" autocomplete="off">
+                    <p class="input__message">Введите верный номер телефона</p>
+                  </div>
+                  <div class="select-block">
+                    <select id="service-form-service" name="service" class="select visually-hidden" aria-placeholder="Выберите услугу*">
+                      <option></option>
+                      <option value="Услуга 1">Услуга 1</option>
+                      <option value="Услуга 2">Услуга 2</option>
+                      <option value="Услуга 3">Услуга 3</option>
+                      <option value="Услуга 4">Услуга 4</option>
+                      <option value="Услуга 5">Услуга 5</option>
+                      <option value="Услуга 6">Услуга 6</option>
+                      <option value="Услуга 7">Услуга 7</option>
+                    </select>
+                    <p class="select-block__error-message">Выберите значение</p>
+                  </div>
+                  <div class="select-block">
+                    <select id="service-form-equipment" name="equipment" class="select visually-hidden" aria-placeholder="Выберите тип оборудования*">
+                      <option></option>
+                      <option value="Услуга 1">Услуга 1</option>
+                      <option value="Услуга 2">Услуга 2</option>
+                      <option value="Услуга 3">Услуга 3</option>
+                      <option value="Услуга 4">Услуга 4</option>
+                      <option value="Услуга 5">Услуга 5</option>
+                      <option value="Услуга 6">Услуга 6</option>
+                      <option value="Услуга 7">Услуга 7</option>
+                    </select>
+                    <p class="select-block__error-message">Выберите значение</p>
+                  </div>
+                  <div class="input">
+                    <textarea name="comment" placeholder="Комментарий"></textarea>
+                  </div>
+                  <button class="service-form__submit button" disabled>Отправить</button>
+                  <p class="service-form__policy">
+                    Нажимая кнопку «Отправить», я&nbsp;соглашаюсь <a href="#">с&nbsp;политикой конфиденциальности</a>
+                  </p>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer">
+      <div class="footer__container container">
+        <div class="footer__part">
+          <a href="#" class="footer__logo"><img src="./img/logo-white.svg" alt="Профсервис"></a>
+          <a href="mailto:info@profservice.ru" class="footer__contact-link">info@profservice.ru</a>
+          <a href="tel:+70000000000" class="footer__contact-link">+7 (000) 000-00-00</a>
+        </div>
+        <div class="footer__part">
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a href="#">Услуги</a></li>
+              <li class="footer__nav-item"><a href="#">Оплата</a></li>
+              <li class="footer__nav-item"><a href="#">О компании</a></li>
+              <li class="footer__nav-item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <span class="footer__bottom-text">2022 ООО Профсервис</span>
+          <a href="#" class="footer__bottom-text footer__bottom-text--link">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
